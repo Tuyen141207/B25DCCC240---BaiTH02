@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời tiết Việt Nam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2 class="header-title">Thành Phố</h2>
+            <div id="city-list" class="city-list">
+            </div>
+        </aside>
+        <main class="main-content">
+            <div class="header-right">
+                <h2 id="city-title">Vui lòng chọn thành phố</h2>
+                <div class="unit-toggle">
+                    <button id="btn-c" class="unit-btn active">°C</button>
+                    <button id="btn-f" class="unit-btn">°F</button>
+                </div>
+            </div>
+            <div id="status-box" class="status-box">
+                Vui lòng chọn một thành phố bên danh sách để xem thời tiết.
+            </div>
+            <div id="weather-content" style="display: none;">
+                <div id="current-weather" class="current-card"></div>
+                <h3 style="margin-top: 20px; margin-bottom: 10px;">Dự báo 7 ngày</h3>
+                <div id="forecast-grid" class="forecast-grid"></div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
